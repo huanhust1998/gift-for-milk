@@ -43,9 +43,6 @@
 
 .heart {
     position: absolute;
-}
-
-.heart:hover {
     animation: heart_hover 1000ms ease-in-out infinite
 }
 
@@ -121,11 +118,7 @@
 
 .star {
     position: absolute;
-
-}
-
-.star:hover {
-    animation: star_animation 2000ms 1 ease-in-out
+    animation: star_animation 2000ms ease-in-out infinite
 }
 
 @keyframes star_animation {
@@ -211,8 +204,8 @@ button:hover {
 }
 
 .changed {
-    transform: translateY(100vh) rotate(90deg);
-    transition-duration: 2000ms;
+    transform: translateY(-100vh) scale(0);
+    transition-duration: 4000ms;
 }
 
 .page_two {
@@ -243,4 +236,232 @@ button:hover {
     line-height: 32px;
     outline: 0;
     font-size: 22px;
+}
+
+.heart_two { 
+    background: red; 
+    position: absolute; 
+    height: 50px; 
+    width: 50px; 
+    transform: rotate(-45deg) scale(1);
+    animation: pulse 7s ease-in-out infinite; 
+    bottom: -70px;
+} 
+  
+  
+.heart_two::after { 
+    background:inherit; 
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top: -50%;
+    left:0; 
+    height: 50px; 
+    width:50px; 
+} 
+.heart_two::before { 
+    background:inherit;  
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top:0;  
+    right:-50%; 
+    height: 50px; 
+    width:50px; 
+} 
+
+.heart_two1 { 
+    background: red; 
+    position: absolute; 
+    height: 50px; 
+    width: 50px; 
+    transform: rotate(-45deg) scale(1);
+    animation: pulse1 7s ease-in-out infinite 1s; 
+    bottom: -70px;
+} 
+  
+.heart_two1::after { 
+    background:inherit; 
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top: -50%;
+    left:0; 
+    height: 50px; 
+    width:50px; 
+} 
+
+.heart_two1::before { 
+    background:inherit;  
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top:0;  
+    right:-50%; 
+    height: 50px; 
+    width:50px; 
+} 
+
+
+.heart_two2 { 
+    background: red; 
+    position: absolute; 
+    height: 50px; 
+    width: 50px; 
+    transform: rotate(-45deg) scale(1);
+    animation: pulse2 7s ease-in-out infinite 2s; 
+    bottom: -70px;
+} 
+  
+  
+.heart_two2::after { 
+    background:inherit; 
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top: -50%;
+    left:0; 
+    height: 50px; 
+    width:50px; 
+} 
+.heart_two2::before { 
+    background:inherit;  
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top:0;  
+    right:-50%; 
+    height: 50px; 
+    width:50px; 
+} 
+
+
+.heart_two3 { 
+    background: red; 
+    position: absolute; 
+    height: 50px; 
+    width: 50px; 
+    transform: rotate(-45deg) scale(1);
+    animation: pulse3 7s ease-in-out infinite 3s; 
+    bottom: -70px;
+} 
+  
+  
+.heart_two3::after { 
+    background:inherit; 
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top: -50%;
+    left:0; 
+    height: 50px; 
+    width:50px; 
+} 
+.heart_two3::before { 
+    background:inherit;  
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top:0;  
+    right:-50%; 
+    height: 50px; 
+    width:50px; 
+} 
+
+
+.heart_two4 { 
+    background: rgb(243, 72, 72); 
+    position: absolute; 
+    height: 50px; 
+    width: 50px; 
+    transform: rotate(-45deg) scale(1);
+    animation: pulse4 7s ease-in-out infinite 4s; 
+    bottom: -70px;
+    opacity: 0;
+} 
+  
+  
+.heart_two4::after { 
+    background:inherit; 
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top: -50%;
+    left:0; 
+    height: 50px; 
+    width:50px; 
+} 
+.heart_two4::before { 
+    background:inherit;  
+    border-radius: 50%;
+    content:''; 
+    position:absolute; 
+    top:0;  
+    right:-50%; 
+    height: 50px; 
+    width:50px; 
+} 
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+        transform: translateX(100px)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-90vh) translateX(50vw) scale(2.5) rotate(-45deg);
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+        opacity: 0.3;
+        transform: translateX(25vw) rotate(-45deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-90vh) scale(2.5) rotate(-45deg);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        opacity: 0.3;
+        transform: translateX(200px) rotate(-45deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-90vh) translateX(400px) scale(2.5) rotate(-45deg);
+    }
+}
+
+
+
+@keyframes pulse3 {
+    0% {
+        opacity: 0.3;
+        transform: translateX(500px) rotate(-90deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-90vh) translateX(500px) scale(2.5) rotate(-45deg);
+    }
+}
+
+
+@keyframes pulse4 {
+    0% {
+        opacity: 0.3;
+        transform: translateX(800px) rotate(-45deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-90vh) translateX(700px) scale(2.5) rotate(-45deg);
+    }
 }
